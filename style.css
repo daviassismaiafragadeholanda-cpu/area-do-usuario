@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8e7;
+    color: #2b1710;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #c62828;
+    color: white;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+    color: #ffd54f;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* PRINCIPAL */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(
+            rgba(198, 40, 40, 0.92),
+            rgba(255, 179, 0, 0.88)
+        );
+}
+
+.hero-text {
+    max-width: 650px;
+    color: white;
+}
+
+.destaque {
+    color: #ffe082;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background: #ffd600;
+    color: #4a160d;
+    padding: 15px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #ffea70;
+    transform: translateY(-3px);
+}
+
+/* CARDÁPIO */
+
+.cardapio {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.cardapio h2,
+.sobre h2,
+.contato h2 {
+    font-size: 38px;
+    color: #c62828;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 6px solid #e53935;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #c62828;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card strong {
+    color: #e65100;
+    font-size: 22px;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 80px 8%;
+    text-align: center;
+    background: #ffca28;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* CONTATO */
+
+.contato {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #3b1710;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}
