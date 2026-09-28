@@ -3,105 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rango dos guri</title>
-<link rel="stylesheet" href="style.css">
+    <title>A Rango dos Guri</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
 
     <header>
-        <nav>
-            <h1>rango dos guri</h1>
+        <div class="logo">
+            <h1>A Rango dos Guri</h1>
+        </div>
 
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
         </nav>
+
+        <a href="#autenticacao" class="botao-login">
+            Entrar
+        </a>
     </header>
 
     <main>
 
-        <section id="inicio" class="hero">
-            <div class="hero-text">
-                <p class="destaque">SABOR</p>
+        <section id="inicio" class="inicio">
 
-                <h2>Uma experiência deliciosa em cada prato!</h2>
+            <div class="inicio-texto">
+                <span>RESTAURANTE</span>
+
+                <h2>
+                    Sabor de verdade
+                    <br>
+                    está aqui.
+                </h2>
 
                 <p>
-                    Comida preparada com carinho,
-                    ingredientes selecionados e muito sabor.
+                    Faça seu pedido de forma rápida e simples.
+                    Entre na sua conta para acessar o restaurante.
                 </p>
 
-                <a href="#cardapio" class="botao">
-                    Ver cardápio
+                <a href="#autenticacao" class="botao-principal">
+                    Entrar na minha conta
                 </a>
             </div>
+
+            <div class="inicio-destaque">
+                <div class="destaque">
+                    <h3>A Rango dos Guri</h3>
+                    <p>Comida boa, simples e feita para você.</p>
+                </div>
+            </div>
+
         </section>
 
+
         <section id="cardapio" class="cardapio">
-            <h2>Nosso Cardápio</h2>
 
-            <div class="cards">
+            <div class="titulo-secao">
+                <span>CARDÁPIO</span>
 
-                <article class="card">
-                    <div class="icone">🍔</div>
-                    <h3>Hambúrguer Especial</h3>
-                    <p>
-                        Pão artesanal, carne suculenta,
-                        queijo e molho especial.
-                    </p>
-                    <strong>R$ 29,90</strong>
+                <h2>
+                    Confira nossas opções
+                </h2>
+
+                <p>
+                    Conheça alguns dos pratos disponíveis no nosso restaurante.
+                </p>
+            </div>
+
+            <div class="produtos">
+
+                <article class="produto">
+                    <div class="produto-imagem">
+                        Hambúrguer
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Brasa Especial</h3>
+                        <p>
+                            Hambúrguer artesanal com queijo,
+                            bacon e molho especial.
+                        </p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <div class="icone">🍕</div>
-                    <h3>Pizza da Casa</h3>
-                    <p>
-                        Massa artesanal com ingredientes
-                        frescos e muito sabor.
-                    </p>
-                    <strong>R$ 49,90</strong>
+                <article class="produto">
+                    <div class="produto-imagem">
+                        Pizza
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Pizza Calabresa</h3>
+                        <p>
+                            Molho de tomate, queijo,
+                            calabresa e cebola.
+                        </p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <div class="icone">🍝</div>
-                    <h3>Massas Especiais</h3>
-                    <p>
-                        Massa preparada na casa com
-                        molho artesanal.
-                    </p>
-                    <strong>R$ 34,90</strong>
+                <article class="produto">
+                    <div class="produto-imagem">
+                        Filé
+                    </div>
+
+                    <div class="produto-info">
+                        <h3>Filé da Brasa</h3>
+                        <p>
+                            Filé grelhado acompanhado
+                            de batatas e molho da casa.
+                        </p>
+                    </div>
                 </article>
 
             </div>
+
         </section>
 
-        <section id="sobre" class="sobre">
-            <h2>Sobre nós</h2>
 
-            <p>
-                No rango dos guri, nossa missão é transformar
-                cada refeição em um momento especial.
-            </p>
+        <section id="autenticacao" class="autenticacao">
+
+            <div class="autenticacao-conteudo">
+
+                <div class="autenticacao-texto">
+                    <span>ÁREA DO CLIENTE</span>
+
+                    <h2>
+                        Entre para fazer
+                        seu pedido
+                    </h2>
+
+                    <p>
+                        Acesse sua conta para realizar pedidos,
+                        acompanhar seus pedidos e editar seu perfil.
+                    </p>
+                </div>
+
+                <div class="formulario">
+
+                    <h3>Entrar</h3>
+
+                    <form>
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button type="submit">
+                            Entrar
+                        </button>
+
+                    </form>
+
+                    <p class="cadastro">
+                        Ainda não possui uma conta?
+                        <a href="#">
+                            Criar conta
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
+
 
         <section id="contato" class="contato">
-            <h2>Faça seu pedido!</h2>
 
-            <p>Estamos esperando por você.</p>
+            <div class="titulo-secao">
+                <span>CONTATO</span>
 
-            <a href="#" class="botao">
-                Entrar em contato
-            </a>
+                <h2>
+                    Fale com a gente
+                </h2>
+
+                <p>
+                    Entre em contato com A Rango dos Guri.
+                </p>
+            </div>
+
+            <div class="contato-info">
+
+                <div>
+                    <strong>Telefone</strong>
+                    <p>(00) 00000-0000</p>
+                </div>
+
+                <div>
+                    <strong>E-mail</strong>
+                    <p>contato@arangodosguri.com</p>
+                </div>
+
+                <div>
+                    <strong>Horário</strong>
+                    <p>Todos os dias, das 11h às 23h</p>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 rango dos guri — Todos os direitos do grupo.</p>
+        <p>A Rango dos Guri</p>
     </footer>
 
 </body>
