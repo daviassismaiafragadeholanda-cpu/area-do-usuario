@@ -6,148 +6,42 @@
     <title>A Rango dos Guri</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="logo">
-            <h1>A Rango dos Guri</h1>
-        </div>
+        <h1>A Rango dos Guri</h1>
 
         <nav>
             <a href="#inicio">Início</a>
             <a href="#cardapio">Cardápio</a>
             <a href="#contato">Contato</a>
         </nav>
-
-        <a href="#autenticacao" class="botao-login">
-            Entrar
-        </a>
     </header>
 
     <main>
 
         <section id="inicio" class="inicio">
 
-            <div class="inicio-texto">
-                <span>RESTAURANTE</span>
+            <div class="apresentacao">
+                <span>A RANGO DOS GURI</span>
 
-                <h2>
-                    Sabor de verdade
-                    <br>
-                    está aqui.
-                </h2>
+                <h2>Acesso ao sistema</h2>
 
-                <p>
-                    Faça seu pedido de forma rápida e simples.
-                    Entre na sua conta para acessar o restaurante.
-                </p>
-
-                <a href="#autenticacao" class="botao-principal">
-                    Entrar na minha conta
-                </a>
+                <p>Entre para acessar sua conta.</p>
             </div>
 
-            <div class="inicio-destaque">
-                <div class="destaque">
-                    <h3>A Rango dos Guri</h3>
-                    <p>Comida boa, simples e feita para você.</p>
-                </div>
-            </div>
+            <div id="autenticacao" class="autenticacao">
 
-        </section>
-
-
-        <section id="cardapio" class="cardapio">
-
-            <div class="titulo-secao">
-                <span>CARDÁPIO</span>
-
-                <h2>
-                    Confira nossas opções
-                </h2>
-
-                <p>
-                    Conheça alguns dos pratos disponíveis no nosso restaurante.
-                </p>
-            </div>
-
-            <div class="produtos">
-
-                <article class="produto">
-                    <div class="produto-imagem">
-                        Hambúrguer
-                    </div>
-
-                    <div class="produto-info">
-                        <h3>Brasa Especial</h3>
-                        <p>
-                            Hambúrguer artesanal com queijo,
-                            bacon e molho especial.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="produto">
-                    <div class="produto-imagem">
-                        Pizza
-                    </div>
-
-                    <div class="produto-info">
-                        <h3>Pizza Calabresa</h3>
-                        <p>
-                            Molho de tomate, queijo,
-                            calabresa e cebola.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="produto">
-                    <div class="produto-imagem">
-                        Filé
-                    </div>
-
-                    <div class="produto-info">
-                        <h3>Filé da Brasa</h3>
-                        <p>
-                            Filé grelhado acompanhado
-                            de batatas e molho da casa.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <section id="autenticacao" class="autenticacao">
-
-            <div class="autenticacao-conteudo">
-
-                <div class="autenticacao-texto">
-                    <span>ÁREA DO CLIENTE</span>
-
-                    <h2>
-                        Entre para fazer
-                        seu pedido
-                    </h2>
-
-                    <p>
-                        Acesse sua conta para realizar pedidos,
-                        acompanhar seus pedidos e editar seu perfil.
-                    </p>
+                <div class="autenticacao-cabecalho">
+                    <h2>Entrar</h2>
+                    <p>Acesse sua conta</p>
                 </div>
 
-                <div class="formulario">
+                <form>
 
-                    <h3>Entrar</h3>
-
-                    <form>
-
-                        <label for="email">
-                            E-mail
-                        </label>
-
+                    <div class="campo">
+                        <label for="email">E-mail</label>
                         <input
                             type="email"
                             id="email"
@@ -155,11 +49,10 @@
                             placeholder="Digite seu e-mail"
                             required
                         >
+                    </div>
 
-                        <label for="senha">
-                            Senha
-                        </label>
-
+                    <div class="campo">
+                        <label for="senha">Senha</label>
                         <input
                             type="password"
                             id="senha"
@@ -167,60 +60,40 @@
                             placeholder="Digite sua senha"
                             required
                         >
+                    </div>
 
-                        <button type="submit">
-                            Entrar
-                        </button>
+                    <div class="opcoes-login">
+                        <label>
+                            <input type="checkbox" name="lembrar">
+                            Lembrar-me
+                        </label>
 
-                    </form>
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
 
-                    <p class="cadastro">
-                        Ainda não possui uma conta?
-                        <a href="#">
-                            Criar conta
-                        </a>
-                    </p>
+                    <button type="submit">
+                        Entrar
+                    </button>
 
+                </form>
+
+                <div class="cadastro">
+                    <p>Não possui uma conta?</p>
+                    <a href="#">Criar conta</a>
                 </div>
 
             </div>
 
         </section>
 
+        <section id="cardapio" class="cardapio">
+            <h2>Cardápio</h2>
+            <p>Visualização do cardápio.</p>
+        </section>
 
         <section id="contato" class="contato">
-
-            <div class="titulo-secao">
-                <span>CONTATO</span>
-
-                <h2>
-                    Fale com a gente
-                </h2>
-
-                <p>
-                    Entre em contato com A Rango dos Guri.
-                </p>
-            </div>
-
-            <div class="contato-info">
-
-                <div>
-                    <strong>Telefone</strong>
-                    <p>(00) 00000-0000</p>
-                </div>
-
-                <div>
-                    <strong>E-mail</strong>
-                    <p>contato@arangodosguri.com</p>
-                </div>
-
-                <div>
-                    <strong>Horário</strong>
-                    <p>Todos os dias, das 11h às 23h</p>
-                </div>
-
-            </div>
-
+            <h2>Contato</h2>
+            <p>Entre em contato com A Rango dos Guri.</p>
         </section>
 
     </main>
