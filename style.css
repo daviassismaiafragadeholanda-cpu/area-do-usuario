@@ -1,1 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+header h1 {
+    color: #d62828;
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f77f00;
+}
+
+.botao-entrar {
+    background: #d62828;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botao-entrar:hover {
+    background: #b71c1c;
+}
+
+main {
+    min-height: calc(100vh - 70px);
+}
+
+.inicio {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.apresentacao {
+    width: 380px;
+}
+
+.apresentacao span {
+    color: #d62828;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.apresentacao h2 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.apresentacao p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.autenticacao {
+    width: 400px;
+    background: #ffffff;
+    padding: 35px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.autenticacao-cabecalho {
+    margin-bottom: 25px;
+}
+
+.autenticacao-cabecalho h2 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.autenticacao-cabecalho p {
+    color: #666666;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    height: 46px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #f77f00;
+}
+
+.opcoes-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.opcoes-login label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.opcoes-login a {
+    color: #d62828;
+    text-decoration: none;
+}
+
+form button {
+    height: 46px;
+    background: #f77f00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #d96800;
+}
+
+.cadastro {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+    font-size: 13px;
+}
+
+.cadastro p {
+    color: #666666;
+    margin-bottom: 7px;
+}
+
+.cadastro a {
+    color: #d62828;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cardapio {
+    min-height: 300px;
+    padding: 80px 50px;
+    background: #ffffff;
+}
+
+.cardapio h2 {
+    color: #d62828;
+}
+
+.contato {
+    min-height: 350px;
+    padding: 80px 50px;
+    background: #f5f5f5;
+}
+
+.contato-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contato-conteudo > span {
+    color: #d62828;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contato-conteudo h2 {
+    margin: 10px 0 30px;
+    font-size: 30px;
+}
+
+.contato-info {
+    display: flex;
+    gap: 60px;
+}
+
+.contato-info div {
+    min-width: 180px;
+}
+
+.contato-info strong {
+    color: #222222;
+}
+
+.contato-info p {
+    color: #666666;
+    margin-top: 7px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 20px;
+    }
+
+    .apresentacao,
+    .autenticacao {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .apresentacao h2 {
+        font-size: 30px;
+    }
+
+    .contato-info {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .botao-entrar {
+        padding: 9px 15px;
+    }
+
+    .autenticacao {
+        padding: 25px 20px;
+    }
+
+    .contato {
+        padding: 60px 20px;
+    }
+}
