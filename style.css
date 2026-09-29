@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f77f00;
+    color: #d62828;
 }
 
 .botao-entrar {
@@ -146,7 +146,7 @@ form {
 }
 
 .campo input:focus {
-    border-color: #f77f00;
+    border-color: #d62828;
 }
 
 .opcoes-login {
@@ -170,7 +170,7 @@ form {
 form button {
     width: 100%;
     height: 46px;
-    background: #f77f00;
+    background: #d62828;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -180,7 +180,7 @@ form button {
 }
 
 form button:hover {
-    background: #d96800;
+    background: #b71c1c;
 }
 
 .cadastro {
